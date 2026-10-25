@@ -13,17 +13,17 @@
 /* Layout: one narrow centered column, a quiet orbit ring behind the name, two tall link plates */
 :root{
   --bg:#F6F1EC; --surface:#FFFFFF; --ink:#2A2230; --muted:#6F6574;
-  --bronze:#A67C52; --theta:#5B4B8A; --line:#E4DAD0;
+  --bronze:#A67C52; --theta:#5B4B8A; --studio:#3E7C6E; --line:#E4DAD0;
   --display:"Frank Ruhl Libre","David",Georgia,serif;
   --body:"Assistant","Arial Hebrew",system-ui,sans-serif;
   --latin:"Playfair Display",Georgia,serif;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   --bg:#17141B; --surface:#221E28; --ink:#F1EAE3; --muted:#AFA4B3;
-  --bronze:#D2A679; --theta:#A595DD; --line:#3A3341; color-scheme:dark}}
+  --bronze:#D2A679; --theta:#A595DD; --studio:#7FC2B1; --line:#3A3341; color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#17141B; --surface:#221E28; --ink:#F1EAE3; --muted:#AFA4B3;
-  --bronze:#D2A679; --theta:#A595DD; --line:#3A3341; color-scheme:dark}
+  --bronze:#D2A679; --theta:#A595DD; --studio:#7FC2B1; --line:#3A3341; color-scheme:dark}
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55}
 .wrap{direction:rtl;max-width:30rem;margin:0 auto;min-height:100%;
@@ -50,7 +50,7 @@ nav{display:flex;flex-direction:column;gap:1rem}
 .txt b i{font-family:var(--latin);font-weight:500;letter-spacing:.01em}
 .txt small{color:var(--muted);font-size:.95rem}
 .arrow{color:var(--c);font-size:1.3rem}
-.sync{--c:var(--bronze)} .theta{--c:var(--theta)}
+.sync{--c:var(--bronze)} .theta{--c:var(--theta)} .studio{--c:var(--studio)}
 .soon{cursor:default}.soon:hover{transform:none;border-color:var(--line)}
 .pill{flex:none;font-size:.8rem;color:var(--c);border:1px solid var(--c);border-radius:999px;padding:.1rem .6rem}
 footer{text-align:center;color:var(--muted);font-size:.85rem;letter-spacing:.04em;direction:ltr}
@@ -78,6 +78,11 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;letter-spacing:.04e
     <a class="plate theta" href="https://alona-healing-4665.web.app/" target="_blank" rel="noopener">
       <span class="mark" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M2 12c1.5-4 3-4 4.5 0s3 4 4.5 0 3-4 4.5 0 3 4 4.5 0 2-2.5 2-2.5"/></svg></span>
       <span class="txt"><b>סשן תטא הילינג</b><small>קביעת מפגש אישי</small></span>
+      <span class="arrow" aria-hidden="true">←</span>
+    </a>
+    <a class="plate studio" href="https://contenthelper-bay.vercel.app/" target="_blank" rel="noopener">
+      <span class="mark" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 15h4M13 15h4M7 11.5h7"/></svg></span>
+      <span class="txt"><b>כלי ליצירת תוכן</b><small>שאלות לפי התסריט, חיתוך שתיקות וכתוביות</small></span>
       <span class="arrow" aria-hidden="true">←</span>
     </a>
   </nav>
